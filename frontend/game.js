@@ -15,8 +15,8 @@ function pular() {
     if (pulando || fimDeJogo) return;
     pulando = true;
 
-    const alturaMaxima = 280;
-    const duracao = 1100;
+    const alturaMaxima = 320; // altura do pulo
+    const duracao = 1200;  //duração do pulo
     const inicio = performance.now();
 
     function animarPulo(agora) {
