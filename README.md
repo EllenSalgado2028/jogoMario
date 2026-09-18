@@ -64,9 +64,9 @@ git clone https://github.com/EllenSalgado2028/jogoMario.git
 
 ## Integrantes
 
-- Adrienne Ellen Salgado - 01794945
-- Evelyn Aline Nunes Mineo - 01824704
-- Mateus Enrique - Desenvolvedor - 01846550
-- Marcus Vinicios Souza de Pablo - 01846641
-- Flavio José Rego da Silva Junior - 01790691
-- Roberto Salgado - 01821769
+- Adrienne Ellen Salgado - Scrum Master - 01794945
+- Evelyn Aline Nunes Mineo - Documentador - 01824704
+- Mateus Enrique - Desenvolvedor Interface - 01846550
+- Marcus Vinicios Souza de Pablo - Documentador - 01846641
+- Flavio José Rego da Silva Junior - Desenvolvedor Lógica - 01790691
+- Roberto Salgado - Testador - 01821769
