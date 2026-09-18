@@ -3,11 +3,13 @@ const cano = document.querySelector(".cano");
 const gameOverEl = document.querySelector(".game-over");
 const btnReiniciar = document.querySelector("button");
 const jogo = document.querySelector(".game");
+const pontosEl = document.querySelector(".pontos");
 
 let pulando = false;
 let fimDeJogo = false;
 let velocidade = 3;
 let posicaoCano = 0;
+let pontos = 0;
 
 const ALTURA_CHAO = 50;
 
@@ -102,6 +104,14 @@ function loop() {
         cano.style.transform = "translateX(0)";
         velocidade += 0.2;
     }
+    if (canoRect.right < 0) {
+    posicaoCano = 0;
+    cano.style.transform = "translateX(0)";
+    velocidade += 0.2;
+
+    pontos++;
+    pontosEl.textContent = `Pontos: ${pontos}`;
+}
 
     checarColisao();
 }
@@ -111,16 +121,18 @@ function reiniciar() {
     pulando = false;
     velocidade = 3;
     posicaoCano = 0;
-
+    pontos = 0;
+    pontosEl.textContent = "Pontos: 0";
+ 
     cano.style.transform = "translateX(0)";
-
+ 
     mario.style.bottom = `${ALTURA_CHAO}px`;
     mario.style.transform = "rotate(0deg)";
     mario.style.opacity = 1;
-
+ 
     gameOverEl.style.display = "none";
 }
-
+ 
 btnReiniciar.addEventListener("click", reiniciar);
 
 loop();
