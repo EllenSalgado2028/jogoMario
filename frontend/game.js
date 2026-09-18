@@ -16,7 +16,7 @@ function pular() {
     pulando = true;
 
     const alturaMaxima = 320; // altura do pulo
-    const duracao = 1200;  //duração do pulo
+    const duracao = 1100;  //duração do pulo
     const inicio = performance.now();
 
     function animarPulo(agora) {
@@ -100,7 +100,7 @@ function loop() {
     if (canoRect.right < 0) {
         posicaoCano = 0;
         cano.style.transform = "translateX(0)";
-        velocidade += 0.3;
+        velocidade += 0.2;
     }
 
     checarColisao();
