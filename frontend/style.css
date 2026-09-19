@@ -35,9 +35,9 @@ body {
 
 .cano {
 position: absolute;
-width: 100px;
+width: 65px;
 bottom: 50px;
-right: 100px;
+right: 30px;
 z-index: 10;
 
 .mario,
